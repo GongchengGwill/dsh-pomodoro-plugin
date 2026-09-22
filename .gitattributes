@@ -1,6 +1,7 @@
 # Normalize all text files to LF in the repository so the plugin source
 # stays byte-identical across platforms (it is evaluated as a function body).
-* text=auto eol=lf
+* text=auto
+* eol=lf
 
 *.png binary
 *.jpg binary
