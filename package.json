@@ -1,0 +1,39 @@
+{
+  "name": "dsh-pomodoro-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A draggable, configurable Pomodoro timer as a DeepSeek Harness dynamic Cordis client plugin, with a chibi mascot that changes expression per phase.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "cordis-plugin",
+    "pomodoro",
+    "pomodoro-timer",
+    "timer",
+    "productivity",
+    "chibi"
+  ],
+  "license": "MIT",
+  "author": "GongchengGwill",
+  "files": [
+    "client.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "kind": "dynamic-cordis-plugin",
+    "platform": "client",
+    "entry": "client.js",
+    "slot": "shell.overlay",
+    "inject": [
+      "timer"
+    ],
+    "builtins": [
+      "React",
+      "ctx",
+      "styles",
+      "console"
+    ]
+  }
+}
